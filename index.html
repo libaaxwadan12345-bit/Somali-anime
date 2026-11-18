@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="so">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#17102b">
+  <title>SOMALI ANIME</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">SOMALI <span>ANIME</span></div>
+  <button id="loginBtn">Gal / Isdiiwaangeli</button>
+</header>
+<section class="hero">
+  <p class="eyebrow">KU SOO DHAWOOW</p>
+  <h1>Anime aad jeceshahay,<br><span>Af-Soomaali ku daawo.</span></h1>
+  <p>Raadi, kaydi, oo daawo anime leh xuquuq aad u haysato ama oggolaansho loo bixiyey.</p>
+  <input id="search" placeholder="Raadi anime..." aria-label="Raadi anime">
+</section>
+<main>
+  <div class="section-head"><h2>Anime-yada</h2><span id="count">0 muuqaal</span></div>
+  <div id="animeGrid" class="grid"></div>
+  <section class="admin">
+    <h2>Maamulka (Admin)</h2>
+    <p>Marka Supabase la xiro oo aad gasho akoon admin, waxaad halkan ka maamuli kartaa muuqaalada.</p>
+    <p class="hint">Noocan bilowga ahi ma soo gelinayo muuqaal cloud ah ilaa la dhammeystiro dejinta Supabase iyo hubinta xuquuqda muuqaalada.</p>
+  </section>
+</main>
+<dialog id="authDialog">
+  <form method="dialog" class="dialog-body">
+    <button class="close" aria-label="Xir">×</button>
+    <h2>Ku xir Supabase</h2>
+    <p>Geli Project URL iyo Publishable key-ga. Ha gelin Secret/service_role key.</p>
+    <label>Project URL<input id="projectUrl" placeholder="https://....supabase.co"></label>
+    <label>Publishable key<input id="publishableKey" placeholder="sb_publishable_..."></label>
+    <button type="button" id="saveConfig">Kaydi dejinta</button>
+    <p id="configStatus" class="hint"></p>
+  </form>
+</dialog>
+<footer>© SOMALI ANIME · Adeegso oo keliya muuqaalada aad sharci ahaan u qaybin karto.</footer>
+<script src="app.js"></script>
+</body>
+</html>
